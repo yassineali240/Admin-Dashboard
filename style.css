@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+html,
+body {
+  background-color: rgb(192, 200, 207);
+  margin: 0;
+  font-family: "Roboto";
+}
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 150px 1fr;
+
+  margin: 0;
+}
+/*header-style*/
+/*header-style*/
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: white;
+  box-shadow: 10px 10px 20px grey;
+}
+.top-header,
+.buttom-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left-top-header {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-content: center;
+}
+.right-top-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  grid-column: 2/3;
+}
+.right-top-header > p {
+  font-weight: bold;
+  font-size: 20px;
+}
+.right-buttom-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.right-buttom-header button {
+  background-color: rgb(17, 133, 235);
+  border-radius: 20px;
+  height: 30px;
+  width: 100px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.top-header button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.left-top-header > input[type="text"] {
+  border-radius: 15px;
+  border: solid 1px;
+  height: 25px;
+  width: 100%;
+  min-width: 200px;
+  max-width: 500px;
+  box-sizing: border-box;
+  background-color: rgb(193, 201, 207);
+  border: none;
+}
+.left-buttom-header > .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-buttom-header {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+.left-buttom-header > .para p,
+.left-buttom-header > .para h3 {
+  margin: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.left-buttom-header > .para p {
+  font-size: 16px;
+}
+.left-buttom-header > .para {
+  justify-content: start;
+  align-content: center;
+}
+/*///////////////header-style///////////*/
+.main {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 20px;
+  gap: 20px;
+}
+
+svg {
+  width: 30px;
+  height: 30px;
+}
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+}
+.your-project {
+  display: flex;
+  flex-direction: column;
+}
+.your-project > p {
+  font-weight: bold;
+}
+.p-class {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  gap: 15px;
+  margin: 0;
+  height: 100%;
+  grid-template-rows: auto;
+}
+.p-class > p {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: -5px 0px 0px orange;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+span {
+  font-weight: bold;
+}
+
+.trending > img {
+  width: 30px;
+  height: 30px;
+}
+
+.trending {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  padding: 20px;
+}
+.trending > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.trending p {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+.left {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  row-gap: 10px;
+  height: 100%;
+  margin: 0;
+}
+.para1 {
+  display: flex;
+  flex-direction: column;
+}
+.para1 > p {
+  font-weight: bold;
+  display: flex;
+}
+.para1 > fieldset {
+  padding: 0;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  border-radius: 10px;
+  border: none;
+}
+fieldset {
+  border: none;
+  border-bottom: solid 1px;
+  margin: 0;
+}
+fieldset > :nth-child(3) {
+  border-bottom: none;
+}
+.sidebar {
+  grid-column: 1/1;
+  grid-row: 1/3;
+  background-color: rgb(30, 138, 215);
+}
+.sidebar > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.Dashboard-link > svg {
+  height: 40px;
+  width: 40px;
+  fill: white;
+}
+.Dashboard-link {
+  display: flex;
+  gap: 5px;
+  margin-top: 20px;
+  margin-left: 5px;
+  font-size: 25px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.nav-link svg {
+  fill: white;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.buttom-bar {
+  margin-top: 50px;
+}
+p svg {
+  fill: grey;
+}
+p span:last-child {
+  display: flex;
+  align-self: flex-end;
+  gap: 15px;
+  margin-top: auto;
+}
